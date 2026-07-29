@@ -18,12 +18,16 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://reservationhataoandolan-chi.vercel.app"),
 
   title: {
-    default: "Reservation Hatao Andolan | Official Information Platform",
+    default: "Reservation Hatao Andolan | Information Platform",
     template: "%s | Reservation Hatao Andolan",
   },
 
   description:
-    "Reservation Hatao Andolan is a citizen-led movement promoting public awareness, informed dialogue, constitutional participation, and policy discussions on reservation reform in India.",
+    "An information platform presenting the Reservation Hatao Andolan movement, its objectives, campaigns, public awareness initiatives, and research-based discussions on reservation reform in India.",
+
+  verification: {
+    google: "ba_pgnx_MycxSiVCQfRoiv0MupE29wZToZaQp-ua1lk",
+  },
 
   keywords: [
     "Reservation Hatao Andolan",
@@ -56,10 +60,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Reservation Hatao Andolan | Official Information Platform",
+    title: "Reservation Hatao Andolan | Information Platform",
 
     description:
-      "Official information platform for Reservation Hatao Andolan. Learn about the movement, current campaigns, public awareness initiatives, research, and updates.",
+      "An information platform presenting the Reservation Hatao Andolan movement, its campaigns, objectives, and public awareness initiatives.",
 
     url: "https://reservationhataoandolan-chi.vercel.app",
 
@@ -73,10 +77,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Reservation Hatao Andolan | Official Information Platform",
+    title: "Reservation Hatao Andolan | Information Platform",
 
     description:
-      "Official information platform for Reservation Hatao Andolan.",
+      "An information platform presenting the Reservation Hatao Andolan movement and its public awareness initiatives.",
 
     creator: "@RHAreforms",
   },
@@ -112,7 +116,6 @@ export default function RootLayout({
             __html: JSON.stringify(websiteSchema),
           }}
         />
-
         {children}
       </body>
     </html>
